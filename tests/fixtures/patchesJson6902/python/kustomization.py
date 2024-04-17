@@ -16,5 +16,5 @@ kustomization = {
             },
             'path': 'add_init_container',
         },
-    ]
+    ],
 }

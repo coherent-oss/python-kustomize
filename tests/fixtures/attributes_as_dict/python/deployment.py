@@ -16,8 +16,7 @@ class CustomDeployment:
                                 'command': [
                                     '/hello',
                                     '--port=8080',
-                                    '--enableRiskyFeature=$('
-                                    'ENABLE_RISKY)',
+                                    '--enableRiskyFeature=$(' 'ENABLE_RISKY)',
                                 ],
                                 'ports': [{'containerPort': 8080}],
                                 'env': [
@@ -26,24 +25,25 @@ class CustomDeployment:
                                         'valueFrom': {
                                             'configMapKeyRef': {
                                                 'name': 'the-map',
-                                                'key': 'altGreeting'
+                                                'key': 'altGreeting',
                                             }
-                                        }
+                                        },
                                     },
                                     {
                                         'name': 'ENABLE_RISKY',
                                         'valueFrom': {
                                             'configMapKeyRef': {
                                                 'name': 'the-map',
-                                                'key': 'enableRisky'
+                                                'key': 'enableRisky',
                                             }
-                                        }
+                                        },
                                     },
                                 ],
-                            }]
-                    }
-                }
-            }
+                            }
+                        ]
+                    },
+                },
+            },
         }
 
 

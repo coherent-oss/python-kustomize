@@ -5,6 +5,6 @@ service = {
     'spec': {
         'selector': {'deployment': 'hello'},
         'type': 'LoadBalancer',
-        'ports': [{'protocol': 'TCP', 'port': 8666, 'targetPort': 8080}]
-    }
+        'ports': [{'protocol': 'TCP', 'port': 8666, 'targetPort': 8080}],
+    },
 }

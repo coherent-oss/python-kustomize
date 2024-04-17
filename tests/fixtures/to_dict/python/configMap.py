@@ -17,8 +17,11 @@ class ConfigMap:
     kind: str = 'ConfigMap'
 
     def __init__(
-            self, metadata: Metadata, data: dict,
-            apiVersion: str = 'v1', kind: str = 'ConfigMap',
+        self,
+        metadata: Metadata,
+        data: dict,
+        apiVersion: str = 'v1',
+        kind: str = 'ConfigMap',
     ):
         self.metadata = metadata
         self.data = data
