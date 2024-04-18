@@ -1,5 +1,5 @@
 Welcome to the |project| documentation!
-===================================
+=======================================
 
 .. sidebar-links::
    :home:
