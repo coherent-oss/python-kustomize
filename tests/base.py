@@ -1,3 +1,5 @@
+import io
+import os.path
 from pathlib import Path
 
 import yaml
@@ -10,13 +12,19 @@ def assert_yaml_dirs_equal(a, b):
     assert len(a_files) == len(b_files)
 
     for a_file, b_file in zip(a_files, b_files):
-        with open(str(a_file), encoding='utf-8') as f:
-            a_data = tuple(yaml.safe_load_all(f))
-        with open(str(b_file), encoding='utf-8') as f:
-            b_data = tuple(yaml.safe_load_all(f))
+        a_data = _load_tuple_data(a_file)
+        b_data = _load_tuple_data(b_file)
 
         for a_datum, b_datum in zip(a_data, b_data):
             assert a_datum == b_datum, f"""
             Got from {a}: {a_data}
             Expected from {b}: {b_data}
             """
+
+
+def _load_tuple_data(file):
+    with open(str(file), encoding='utf-8') as f:
+        content = f.read()
+        replaced = content.replace('${PATH_SEPARATOR}', os.path.sep)
+        buffer = io.StringIO(replaced)
+        return tuple(yaml.safe_load_all(buffer))

@@ -4,9 +4,9 @@ commonLabels:
   app: hello
 
 resources:
-- deployment/deployment.yaml
-- service/service.yaml
-- configMap/configMap.yaml
+- deployment${PATH_SEPARATOR}deployment.yaml
+- service${PATH_SEPARATOR}service.yaml
+- configMap${PATH_SEPARATOR}configMap.yaml
 
 patchesJson6902:
 - target:
