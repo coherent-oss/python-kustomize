@@ -1,10 +1,14 @@
+Welcome to the |project| documentation!
+=======================================
+
+.. sidebar-links::
+   :home:
+   :pypi:
+
 .. toctree::
    :maxdepth: 1
 
    history
-
-
-.. include:: ../README.rst
 
 
 .. automodule:: kustomize

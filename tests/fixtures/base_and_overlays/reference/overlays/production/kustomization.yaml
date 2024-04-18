@@ -3,4 +3,4 @@ commonLabels:
 bases:
   - ../../base
 patches:
-  - replica_count/replica_count.yaml
+  - replica_count${PATH_SEPARATOR}replica_count.yaml

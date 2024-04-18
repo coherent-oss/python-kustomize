@@ -4,6 +4,6 @@ commonLabels:
   app: hello
 
 resources:
-- deployment/my_deployment.yaml
-- service/my_service.yaml
-- configMap/my_config_map.yaml
+- deployment${PATH_SEPARATOR}my_deployment.yaml
+- service${PATH_SEPARATOR}my_service.yaml
+- configMap${PATH_SEPARATOR}my_config_map.yaml

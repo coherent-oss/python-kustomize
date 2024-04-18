@@ -1,21 +1,23 @@
-python-kustomize
-================
-
-Build your Kubernetes manifests for Kustomize in Python!
-
 .. image:: https://img.shields.io/pypi/v/kustomize.svg
    :target: https://pypi.org/project/kustomize
 
 .. image:: https://img.shields.io/pypi/pyversions/kustomize.svg
 
-.. image:: https://img.shields.io/travis/yougov/python-kustomize/master.svg
-   :target: https://travis-ci.org/yougov/python-kustomize
+.. image:: https://github.com/coherent-oss/python-kustomize/actions/workflows/main.yml/badge.svg
+   :target: https://github.com/coherent-oss/python-kustomize/actions?query=workflow%3A%22tests%22
+   :alt: tests
 
-.. .. image:: https://img.shields.io/appveyor/ci/yougov/python-kustomize/master.svg
-..    :target: https://ci.appveyor.com/project/yougov/python-kustomize/branch/master
+.. image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json
+    :target: https://github.com/astral-sh/ruff
+    :alt: Ruff
 
-.. .. image:: https://readthedocs.org/projects/kustomize/badge/?version=latest
-..    :target: https://kustomize.readthedocs.io/en/latest/?badge=latest
+.. .. image:: https://readthedocs.org/projects/PROJECT_RTD/badge/?version=latest
+..    :target: https://PROJECT_RTD.readthedocs.io/en/latest/?badge=latest
+
+.. image:: https://img.shields.io/badge/skeleton-2024-informational
+   :target: https://blog.jaraco.com/skeleton
+
+Build your Kubernetes manifests for Kustomize in Python!
 
 * PyPI: https://pypi.org/project/kustomize/
 * Repository: https://github.com/yougov/python-kustomize

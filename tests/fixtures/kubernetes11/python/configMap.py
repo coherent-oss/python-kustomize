@@ -39,8 +39,11 @@ class ConfigMap:
     }
 
     def __init__(
-            self, metadata: Metadata, data: dict,
-            api_version: str = 'v1', kind: str = 'ConfigMap',
+        self,
+        metadata: Metadata,
+        data: dict,
+        api_version: str = 'v1',
+        kind: str = 'ConfigMap',
     ):
         self.metadata = metadata
         self.data = data
@@ -64,7 +67,7 @@ configMap = ConfigMap(
             'ignore': None,
             'numbers': [1, 2],
             'others': (3, 4),
-        }
+        },
     ),
     data={'altGreeting': 'Good Morning!', 'enableRisky': 'false'},
 )

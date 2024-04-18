@@ -9,7 +9,8 @@ def test_generates_simple_dict(cd_fixtures, create_build_path):
     reference_path = fixtures_path / 'reference'
 
     args = [
-        '--attr-name', 'my_kustomization',
+        '--attr-name',
+        'my_kustomization',
         str(python_path),
         str(build_path),
     ]
@@ -26,7 +27,8 @@ def test_generates_simple_dict_verbose(cd_fixtures, create_build_path):
     reference_path = fixtures_path / 'reference'
 
     args = [
-        '--attr-name', 'my_kustomization',
+        '--attr-name',
+        'my_kustomization',
         '--verbose',
         str(python_path),
         str(build_path),
@@ -44,7 +46,8 @@ def test_generates_simple_dict_with_subdirs(cd_fixtures, create_build_path):
     reference_path = fixtures_path / 'reference'
 
     args = [
-        '--attr-name', 'my_kustomization',
+        '--attr-name',
+        'my_kustomization',
         str(python_path),
         str(build_path),
     ]
