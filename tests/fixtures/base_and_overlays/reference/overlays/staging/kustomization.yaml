@@ -3,4 +3,4 @@ commonLabels:
 bases:
   - ../../base
 patchesStrategicMerge:
-  - special_labels/special_labels.yaml
+  - special_labels${PATH_SEPARATOR}special_labels.yaml
