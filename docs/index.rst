@@ -1,4 +1,4 @@
-Welcome to |project| documentation!
+Welcome to the |project| documentation!
 ===================================
 
 .. sidebar-links::
