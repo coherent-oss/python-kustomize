@@ -5,4 +5,4 @@
 History
 *******
 
-.. include:: ../NEWS.rst
+.. include:: ../NEWS (links).rst
