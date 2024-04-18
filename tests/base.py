@@ -1,11 +1,12 @@
 import io
 import os.path
 from pathlib import Path
+from typing import Any, Tuple
 
 import yaml
 
 
-def assert_yaml_dirs_equal(a, b):
+def assert_yaml_dirs_equal(a: str, b: str) -> None:
     a_files = sorted(Path(a).rglob('*.yaml'))
     b_files = sorted(Path(b).rglob('*.yaml'))
 
@@ -22,8 +23,8 @@ def assert_yaml_dirs_equal(a, b):
             """
 
 
-def _load_tuple_data(file):
-    with open(str(file), encoding='utf-8') as f:
+def _load_tuple_data(file: Path) -> Tuple[Any, ...]:
+    with file.open(encoding='utf-8') as f:
         content = f.read()
         replaced = content.replace('${PATH_SEPARATOR}', os.path.sep)
         buffer = io.StringIO(replaced)
