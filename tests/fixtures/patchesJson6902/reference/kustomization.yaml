@@ -13,4 +13,4 @@ patchesJson6902:
     version: v1
     kind: Deployment
     name: my-deployment
-  path: add_init_container/add_init_container.yaml
+  path: add_init_container${PATH_SEPARATOR}add_init_container.yaml
