@@ -4,8 +4,8 @@ import yaml
 
 
 def assert_yaml_dirs_equal(a, b):
-    a_files = list(Path(a).rglob('*.yaml'))
-    b_files = list(Path(b).rglob('*.yaml'))
+    a_files = sorted(Path(a).rglob('*.yaml'))
+    b_files = sorted(Path(b).rglob('*.yaml'))
 
     assert len(a_files) == len(b_files)
 
@@ -16,7 +16,7 @@ def assert_yaml_dirs_equal(a, b):
             b_data = tuple(yaml.safe_load_all(f))
 
         for a_datum, b_datum in zip(a_data, b_data):
-            assert a_data == b_data, f"""
+            assert a_datum == b_datum, f"""
             Got from {a}: {a_data}
             Expected from {b}: {b_data}
             """
