@@ -1,3 +1,13 @@
+v0.5.1
+======
+
+Bugfixes
+--------
+
+- Refreshed the package metadata. (#1)
+- Require Python 3.8 or later.
+
+
 0.5.0
 =====
 
