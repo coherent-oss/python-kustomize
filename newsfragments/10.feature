@@ -1,0 +1,1 @@
+Adding Pydantic v2 support.
