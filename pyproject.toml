@@ -37,6 +37,8 @@ testing = [
 	"coverage",
 	"PyYAML",
 	"types-PyYAML",
+	"attrs",
+	"Pydantic >= 2.0",
 ]
 docs = [
 	# upstream
