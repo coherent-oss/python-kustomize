@@ -121,10 +121,10 @@ jobs:
       - name: Install tox
         run: python -m pip install tox
       - name: Build
-        run: tox -e build
+        run: tox -e release exec -- python -m build
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
       - name: GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: tox -e gh_release
+        run: tox -e release exec -- python -m jaraco.develop.create-github-release
