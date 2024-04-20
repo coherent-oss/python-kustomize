@@ -1,13 +1,14 @@
+from dataclasses import dataclass
 from typing import List
 
-from pydantic import BaseModel
 
-
-class CommonLabels(BaseModel):
+@dataclass
+class CommonLabels:
     app: str
 
 
-class MyKustomization(BaseModel):
+@dataclass
+class MyKustomization:
     commonLabels: CommonLabels
     resources: List[str]
 

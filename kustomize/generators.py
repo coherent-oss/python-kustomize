@@ -160,6 +160,15 @@ def is_attr_class(obj) -> bool:
     return attr.has(type(obj))
 
 
+def is_pydantic_model(obj) -> bool:
+    try:
+        from pydantic import BaseModel
+    except ImportError:  # pragma: no cover
+        return False
+
+    return isinstance(obj, BaseModel)
+
+
 def _is_kubernetes(obj):
     return (
         hasattr(obj, 'to_dict')
@@ -227,6 +236,9 @@ def to_dict_or_dicts(obj):
         import attr
 
         obj = attr.asdict(obj, recurse=True)
+    elif is_pydantic_model(obj):
+        logger.debug('Object is a Pydantic model, using it for conversion')
+        obj = obj.model_dump()
     elif hasattr(obj, '__dict__'):
         obj = obj.__dict__
 

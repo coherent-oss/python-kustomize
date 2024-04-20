@@ -1,8 +1,5 @@
-from pydantic import BaseModel
-
-
-class CustomDeployment(BaseModel):
-    def model_dump(self) -> dict:
+class CustomDeployment:
+    def to_dict(self) -> dict:
         return {
             'apiVersion': 'apps/v1',
             'kind': 'Deployment',

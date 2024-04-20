@@ -1,11 +1,13 @@
-from pydantic import BaseModel
+import attr
 
 
-class Metadata(BaseModel):
+@attr.s(auto_attribs=True)
+class Metadata:
     name: str
 
 
-class ConfigMap(BaseModel):
+@attr.s(auto_attribs=True)
+class ConfigMap:
     metadata: Metadata
     data: dict
     apiVersion: str = 'v1'

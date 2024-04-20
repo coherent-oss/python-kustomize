@@ -1,0 +1,9 @@
+# Example configuration for the webserver
+# at https://github.com/monopole/hello
+commonLabels:
+  app: hello
+
+resources:
+- deployment${PATH_SEPARATOR}deployment.yaml
+- service${PATH_SEPARATOR}service.yaml
+- configMap${PATH_SEPARATOR}configMap.yaml
