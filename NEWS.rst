@@ -1,3 +1,12 @@
+v0.6.0
+======
+
+Features
+--------
+
+- Adding Pydantic v2 support. (#10)
+
+
 v0.5.1
 ======
 
