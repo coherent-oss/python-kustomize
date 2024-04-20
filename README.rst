@@ -55,6 +55,7 @@ supports a number of object definition types:
 
 * ``dict``
 * ``dataclasses``
+* ``BaseModel`` (from Pydantic)
 * ``attr`` (needs the library installed)
 * ``kubernetes`` (needs the library installed)
 
