@@ -20,7 +20,7 @@
 Build your Kubernetes manifests for Kustomize in Python!
 
 * PyPI: https://pypi.org/project/kustomize/
-* Repository: https://github.com/yougov/python-kustomize
+* Repository: https://github.com/coherent-oss/python-kustomize
 * Documentation: https://python-kustomize.readthedocs.io/en/latest/
 
 Overview
