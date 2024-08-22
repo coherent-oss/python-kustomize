@@ -121,7 +121,7 @@ def clean_data(data: Union[dict, list, tuple]):
 
 
 def _get_kustomization_data(attr_name, dest_path):
-    import kustomization as k_module
+    import kustomization as k_module  # type: ignore[import-not-found]
 
     importlib.reload(k_module)
     kustomization = to_dict_or_dicts(getattr(k_module, attr_name))
