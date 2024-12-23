@@ -31,9 +31,7 @@ def _get_options(args):
     )
     parser.add_argument(
         'dest_path',
-        help=(
-            'Destination directory where the Kustomize YAML files will be ' 'put at.'
-        ),
+        help=('Destination directory where the Kustomize YAML files will be put at.'),
     )
 
     return parser.parse_args(args)

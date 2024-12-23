@@ -16,7 +16,7 @@ class CustomDeployment:
                                 'command': [
                                     '/hello',
                                     '--port=8080',
-                                    '--enableRiskyFeature=$(' 'ENABLE_RISKY)',
+                                    '--enableRiskyFeature=$(ENABLE_RISKY)',
                                 ],
                                 'ports': [{'containerPort': 8080}],
                                 'env': [
